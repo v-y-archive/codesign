@@ -4,8 +4,8 @@ import plistlib
 kSecCodeMagicRequirement		= b"\xFA\xDE\x0C\x00"	# Single requirement
 kSecCodeMagicRequirementSet		= b"\xFA\xDE\x0C\x01"	# Requirement set
 kSecCodeMagicCodeDirectory		= b"\xFA\xDE\x0C\x02"	# CodeDirectory
-kSecCodeMagicEmbeddedSignature	= b"\xFA\xDE\x0C\xC0"	# Single-architecture embedded signature
-kSecCodeMagicDetachedSignature	= b"\xFA\xDE\x0C\xC1"	# Detached multi-architecture signature
+kSecCodeMagicEmbeddedSignature		= b"\xFA\xDE\x0C\xC0"	# Single-architecture embedded signature
+kSecCodeMagicDetachedSignature		= b"\xFA\xDE\x0C\xC1"	# Detached multi-architecture signature
 kSecCodeMagicEntitlement		= b"\xFA\xDE\x71\x71"	# Entitlement blob
 
 def get_entitlements(executable):
