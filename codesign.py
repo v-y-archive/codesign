@@ -26,7 +26,7 @@ def get_entitlements(executable):
 
 def get_ipa_entitlements(ipa_path):
 	"""Get application entitlements from .ipa file"""
-	with tempfile.TemporaryDirectory as tmp_dir:
+	with tempfile.TemporaryDirectory() as tmp_dir:
 		with zipfile.ZipFile(ipa_path, "r") as zip_ref:
 			zip_ref.extractall(tmp_dir)
 		app_dir = glob(f"{tmp_dir}/Payload/*.app")[0]
