@@ -31,4 +31,4 @@ def get_ipa_entitlements(ipa_path):
 			zip_ref.extractall(tmp_dir)
 		app_dir = glob(f"{tmp_dir}/Payload/*.app")[0]
 		app_executable = os.path.basename(app_dir).split(".")[0]
-		return get_entitlements(app_executable)
+		return get_entitlements(f"{app_dir}/{app_executable}")
