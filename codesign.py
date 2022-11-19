@@ -5,6 +5,7 @@ import zipfile
 import tempfile
 from glob import glob
 
+
 kSecCodeMagicRequirement		= b"\xFA\xDE\x0C\x00"	# Single requirement
 kSecCodeMagicRequirementSet		= b"\xFA\xDE\x0C\x01"	# Requirement set
 kSecCodeMagicCodeDirectory		= b"\xFA\xDE\x0C\x02"	# CodeDirectory
